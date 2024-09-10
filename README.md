@@ -1,38 +1,37 @@
-# Bets_Soccer_WorlCup2018
-Analyse et modélisation prédictive pour un site de pari en ligne : Evaluation des performances des utilisateurs et prévision des comportements de paris en ligne.
+### Analyse et modélisation prédictive pour un site de pari en ligne : Évaluation des performances des utilisateurs et prévision des comportements de paris en ligne.
 
-# LittleBigBet Data Analysis and Machine Learning Project
+# Projet d'analyse des données et de machine learning pour BetSmart
 
-## Project Overview
+## Aperçu du projet
 
-This project is focused on analyzing the betting behavior of customers on the LittleBigBet platform, a football-focused online betting website. The goal of this project is to:
+Ce projet se concentre sur l'analyse du comportement des utilisateurs de la plateforme BetSmart, un site de paris en ligne dédié au football. L'objectif de ce projet est de :
 
-1. **Test the effectiveness** of a new feature that predicts match outcomes for premium users.
-2. **Provide insights** through data analysis and suggest strategies for improving customer engagement.
-3. **Develop predictive models** to forecast customer behavior, including the likelihood of a bet winning and the probability of a standard customer upgrading to a premium account.
+1. **Tester l'efficacité** d'une nouvelle fonctionnalité qui prédit les résultats des matchs pour les utilisateurs premium.
+2. **Fournir des insights** basés sur l'analyse des données et suggérer des stratégies pour améliorer l'engagement des clients.
+3. **Développer des modèles prédictifs** pour prévoir le comportement des clients, notamment la probabilité qu'un pari soit gagnant et qu'un client standard passe à un compte premium.
 
-## Datasets
+## Jeux de données
 
-We used three datasets for this analysis:
+Trois jeux de données ont été utilisés pour cette analyse :
 
-1. **bets.csv**: Contains detailed information about bets made on the platform.
-2. **customers.csv**: Contains customer information, including whether they are premium users and if they had access to the new predictive service.
-3. **pricing.csv**: Contains subscription pricing details for standard and premium users.
+1. **bets.csv** : Contient des informations détaillées sur les paris effectués sur la plateforme.
+2. **customers.csv** : Contient des informations sur les clients, notamment s'ils sont des utilisateurs premium et s'ils ont eu accès au nouveau service de prédiction.
+3. **pricing.csv** : Contient les détails des tarifs d'abonnement pour les comptes standard et premium.
 
-## Key Objectives
+## Objectifs clés
 
-1. **Feature testing**: Analyze whether the new feature offered to premium users between June 14, 2018, and July 15, 2018, improved the betting experience.
-2. **KPIs development**: Build a dashboard to monitor the company’s performance.
-3. **Machine Learning**: Implement predictive models to forecast outcomes such as whether a customer will win a bet or upgrade to a premium account.
+1. **Test de la fonctionnalité** : Analyser si la nouvelle fonctionnalité, offerte aux utilisateurs premium entre le 14 juin 2018 et le 15 juillet 2018, a amélioré leur expérience de pari.
+2. **Développement des KPIs** : Créer un tableau de bord pour suivre la performance de l'entreprise.
+3. **Machine Learning** : Implémenter des modèles prédictifs pour anticiper des résultats tels que la victoire d'un pari ou la conversion d'un client standard en compte premium.
 
-## Tools and Techniques Used
+## Outils et techniques utilisés
 
-- **Data Preprocessing**: pandas, NumPy
-- **Data Visualization**: Matplotlib, Seaborn
-- **Machine Learning**: scikit-learn, RandomForestClassifier, LogisticRegression
-- **Model Evaluation**: Accuracy, Precision, Recall, Confusion Matrix
+- **Prétraitement des données** : pandas, NumPy
+- **Visualisation des données** : Matplotlib, Seaborn
+- **Machine Learning** : scikit-learn, RandomForestClassifier, LogisticRegression
+- **Évaluation des modèles** : Précision, rappel, matrice de confusion
 
-## Folder Structure
+## Structure du projet
 
 ```
 ├── data
@@ -45,20 +44,20 @@ We used three datasets for this analysis:
 ├── README.md
 ```
 
-## Key Insights from the Analysis
+## Résultats clés de l'analyse
 
-1. **Customer behavior analysis**: There was no significant improvement in the win rate for customers who had access to the new service, indicating that the service did not significantly impact customer betting behavior.
-2. **KPI Dashboard**: Monthly subscription trends and commission from bets were tracked to evaluate company performance.
-3. **Machine Learning Models**:
-   - **Prediction of Bet Outcome**: A Random Forest model was trained to predict whether a bet will win or lose based on the available features.
-   - **Customer Conversion**: A Logistic Regression model was implemented to predict whether a standard customer will upgrade to a premium account.
+1. **Analyse du comportement des clients** : Il n'y a pas eu d'amélioration significative du taux de réussite des paris pour les clients ayant eu accès au nouveau service, indiquant que ce dernier n'a pas eu un impact majeur sur leur comportement de pari.
+2. **Tableau de bord KPI** : Les tendances des abonnements mensuels et les commissions des paris ont été suivies pour évaluer la performance de l'entreprise.
+3. **Modèles de Machine Learning** :
+   - **Prédiction du résultat des paris** : Un modèle Random Forest a été entraîné pour prédire si un pari sera gagnant ou perdant en fonction des caractéristiques disponibles.
+   - **Conversion des clients** : Un modèle de régression logistique a été utilisé pour prédire si un client standard passera à un compte premium.
 
-## Machine Learning Models
+## Modèles de Machine Learning
 
-### Model 1: Bet Outcome Prediction
+### Modèle 1 : Prédiction des résultats des paris
 
-The Random Forest model was trained using features such as the bet value, premium status, and test service access to predict the likelihood of a bet winning. The model achieved reasonable accuracy but could be further improved with more features and hyperparameter tuning.
+Le modèle Random Forest a été entraîné en utilisant des caractéristiques telles que la valeur du pari, le statut premium et l'accès au service de test pour prédire la probabilité qu'un pari soit gagnant. Le modèle a atteint une précision raisonnable, mais pourrait être amélioré avec plus de fonctionnalités et un réglage des hyperparamètres.
 
-### Model 2: Customer Premium Conversion
+### Modèle 2 : Conversion des clients standard en premium
 
-A Logistic Regression model was used to predict the likelihood of a customer upgrading from a standard account to a premium account. The model provides valuable insights into the factors that influence customer upgrades.
+Un modèle de régression logistique a été utilisé pour prédire la probabilité qu'un client passe d'un compte standard à un compte premium. Le modèle offre des insights précieux sur les facteurs qui influencent cette conversion.
